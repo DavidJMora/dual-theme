@@ -6,30 +6,78 @@ body {
     height: 100vh;
     width: 100vw;
     display: flex;
-    border: 1px black solid;
+    /* border: 1px black solid; */
+}
+
+.ny-background {
+    background-image: url("./images/ny1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: none;
+}
+
+.ny-background2 {
+    background-image: url('./images/ny2.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: none;
+}
+
+.ks-background {
+    background-image: url('./images/ks1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: none;
+}
+
+.ks-background2 {
+    background-image: url('./images/ks2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: none;
 }
 
 #sidebar {
-    border: 1px turquoise solid;
+    /* border: 1px turquoise solid; */
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
 }
 
 #city-name {
-    border: 1px blue solid;
+    /* border: 1px blue solid; */
     text-align: center;
     font-size: 2em;
 }
 
-#history {
-    border: 1px orange solid;
-    align-self: center;
+.sub-header {
+    background-color: rgba(211, 211, 211, .5);
+    text-align: center;
+}
 
+#history {
+    /* border: 1px orange solid; */
+    align-self: center;
+    background-color: rgba(0, 0, 0, .4);
+    color: white;
+    border-radius: 2px 2px;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.9);
+}
+
+#climate {
+    background-color: rgba(0, 0, 0, .4);
+    color: white;
+    border-radius: 2px 2px;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.9);
+}
+
+table td {
+    border: 1px black double;
+    background-color: rgb(211, 211, 211, .4)
 }
 
 #table-sidebar {
-    border: 1px goldenrod solid;
+    /* border: 1px goldenrod solid; */
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -39,55 +87,35 @@ body {
     display: flex;
     align-content: center;
     justify-content: space-evenly;
-    border: 1px purple solid;
+    /* border: 1px purple solid; */
 }
 
 .buttons {
     font-size: 1.25em;
     font-weight: 500;
     font-family: sans-serif;
-    text-decoration-color: black;
+    /* text-decoration-color: black; */
     border: 0;
     margin: 6px;
     border-radius: 2px 2px;
     box-shadow: 0 2px 5px 0 rgba(0,0,0,.26);
+    opacity: .7;
+    background-color: black;
+    color: white;
 }
 
 #main-table {
-    border: 1px black solid;
+    /* border: 1px black solid; */
     height: 90%;
 }
 
 .table-header {
     text-align: center;
-    border: 1px black solid;
+    /* border: 1px black solid; */
     font-size: 1.5em;
 }
 
 .table-info {
-    border: 1px darkkhaki solid;
     font-size: .7em;
-}
-
-
-
-.founded {
-    border: 1px cyan solid;
-
-}
-
-.population {
-    border: 1px yellow solid;
-}
-
-.map {
-    border: 1px green solid;
-}
-
-.mayor {
-
-}
-
-.elevation {
-
+    border: none;
 }
