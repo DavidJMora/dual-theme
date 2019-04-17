@@ -1,0 +1,73 @@
+body {
+    margin: 0;
+}
+
+#main {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    border: 1px black solid;
+}
+
+#sidebar {
+    border: 1px turquoise solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+#city-name {
+    border: 1px blue solid;
+}
+
+#history {
+    border: 1px orange solid;
+    align-self: center;
+
+}
+
+#table-sidebar {
+    border: 1px goldenrod solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+#toggle-buttons {
+    display: flex;
+    align-content: center;
+    justify-content: space-evenly;
+    border: 1px purple solid;
+}
+
+.buttons {
+    font-size: 1.25em;
+    font-weight: 500;
+    font-family: sans-serif;
+    border: 0;
+    margin: 6px;
+    border-radius: 2px 2px;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.26);
+}
+
+#table-info {
+    border: 1px black solid;
+}
+
+.table-header {
+    text-align: center;
+    border: 1px black solid;
+}
+
+.founded {
+    border: 1px cyan solid;
+
+}
+
+.population {
+    border: 1px yellow solid;
+}
+
+.map {
+    border: 1px green solid;
+}

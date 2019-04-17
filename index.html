@@ -10,24 +10,33 @@
     <title>The Tale of Two Cities</title>
 </head>
 <body id="main">
-    <section>
+    <section id="sidebar">
         <h1 id="city-name"></h1>
+        <h3 class="sub-header">History</h3>
         <p id='history'></p>
+        <h3 class="sub-header">Climate</h3>
+        <p id='climate'></p>
     </section>
-    <section>
-        <section>
-            <button class="new-york">New York City, NY</button>
-            <button class='lawrence'>Lawrence, KS</button>
+    <section id="table-sidebar">
+        <section id="toggle-buttons">
+            <button class="new-york buttons">New York City, NY</button>
+            <button class='lawrence buttons'>Lawrence, KS</button>
         </section>
-        <table>
-            <tr id="table-map">
-                <td class="table-header">Map</td>
+        <table id="table-info">
+            <tr>
+                <td id="table-map" class="table-header">Map</td>
             </tr>
-            <tr id="table-pop">
-                <td class="table-header">Population</td>
+            <tr>
+                <td id="table-pop" class="table-header">Population</td>
             </tr>
-            <tr id="table-founded">
-                <td class="table-header">Founded</td>
+            <tr>
+                <td id="table-founded" class="table-header">Founded</td>
+            </tr>
+            <tr>
+                <td id="table-mayor" class='table-header'>Mayor</td>
+            </tr>
+            <tr>
+                <td id="table-elevation" class="table-header">Elevation</td>
             </tr>
         </table>
     </section>
