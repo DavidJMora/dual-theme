@@ -4,14 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="data.js"></script>
     <script src="main.js"></script>
     <link rel="stylesheet" href="main.css">
     <title>The Tale of Two Cities</title>
 </head>
 <body id="main">
     <section>
-        <h1></h1>
-        <p></p>
+        <h1 id="city-name"></h1>
+        <p id='history'></p>
     </section>
     <section>
         <section>
@@ -19,7 +20,15 @@
             <button class='lawrence'>Lawrence, KS</button>
         </section>
         <table>
-
+            <tr id="table-map">
+                <td class="table-header">Map</td>
+            </tr>
+            <tr id="table-pop">
+                <td class="table-header">Population</td>
+            </tr>
+            <tr id="table-founded">
+                <td class="table-header">Founded</td>
+            </tr>
         </table>
     </section>
 </body>
