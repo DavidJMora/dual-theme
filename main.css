@@ -13,28 +13,26 @@ body {
     background-image: url("./images/ny1.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    display: none;
+    transition: background-image 3s;
 }
 
 .ny-background2 {
-    background-image: url('./images/ny2.jpeg');
+    background-image: url('./images/ny2.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    display: none;
 }
 
 .ks-background {
     background-image: url('./images/ks1.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    display: none;
+    transition: background-image 2s;
 }
 
 .ks-background2 {
     background-image: url('./images/ks2.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    display: none;
 }
 
 #sidebar {

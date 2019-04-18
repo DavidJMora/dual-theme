@@ -1,5 +1,7 @@
 window.onload = init;
 
+let interval = setInterval(newYorkBackground, 5000);
+
 function init() {
     populateHTML();
 
@@ -16,6 +18,17 @@ function toggleNY(event) {
     lawrenceButton.disabled = false;
     nyButton.disabled = true;
 
+    clearInterval(interval);
+    const body = document.querySelector('body');
+    if(body.classList.contains('ks-background') === true) {
+        body.classList.replace('ks-background', 'ny-background')
+    } else {
+        body.classList.replace('ks-background2', 'ny-background')
+    }
+    interval = setInterval(newYorkBackground, 5000);
+
+    // toggleCity(lawrence);
+
     toggleCity(newYork);
 }
 
@@ -24,6 +37,15 @@ function toggleLawrence(event) {
     const nyButton = document.querySelector('.new-york');
     lawrenceButton.disabled = true;
     nyButton.disabled = false;
+
+    clearInterval(interval);
+    const body = document.querySelector('body');
+    if(body.classList.contains('ny-background') === true) {
+        body.classList.replace('ny-background', 'ks-background')
+    } else {
+        body.classList.replace('ny-background2', 'ks-background')
+    }
+    interval = setInterval(lawrenceBackground, 5000);
 
     toggleCity(lawrence);
 }
@@ -79,4 +101,17 @@ function populateHTML() {
     elevation.innerText = newYork["elevation"];
     elevation.className = "elevation table-info";
     appendElement.appendChild(elevation);
+}
+
+function newYorkBackground() {
+
+    const mainImage = document.querySelector('.ny-background');
+    mainImage.classList.toggle('ny-background2');
+    
+}
+
+function lawrenceBackground() {
+
+    const mainImage = document.querySelector('.ks-background');
+    mainImage.classList.toggle('ks-background2');
 }
