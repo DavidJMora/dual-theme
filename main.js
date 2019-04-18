@@ -18,6 +18,9 @@ function toggleNY(event) {
     lawrenceButton.disabled = false;
     nyButton.disabled = true;
 
+    const classChange = document.querySelector("p");
+    classChange.classList.toggle('main-text');
+
     clearInterval(interval);
     const body = document.querySelector('body');
     if(body.classList.contains('ks-background') === true) {
@@ -27,8 +30,6 @@ function toggleNY(event) {
     }
     interval = setInterval(newYorkBackground, 5000);
 
-    // toggleCity(lawrence);
-
     toggleCity(newYork);
 }
 
@@ -37,6 +38,9 @@ function toggleLawrence(event) {
     const nyButton = document.querySelector('.new-york');
     lawrenceButton.disabled = true;
     nyButton.disabled = false;
+
+    const classChange = document.querySelector('p');
+    classChange.classList.toggle('main-text');
 
     clearInterval(interval);
     const body = document.querySelector('body');
@@ -55,8 +59,8 @@ function toggleCity(city) {
     document.querySelector('.population').innerText = city["population"];
     document.querySelector('.map').src = city["tableImage"];
     document.querySelector('.founded').innerText = city["founded"];
-    document.querySelector('#history').innerText = city["history"];
-    document.querySelector('#climate').innerText = city["climate"];
+    document.querySelector('.history').innerText = city["history"];
+    document.querySelector('.climate').innerText = city["climate"];
     document.querySelector('.mayor').innerText = city["mayor"];
     document.querySelector('.elevation').innerText = city["elevation"];
 
@@ -68,9 +72,9 @@ function populateHTML() {
     const button = document.querySelector('.new-york');
     button.disabled = true;
 
-    document.querySelector('#history').innerText = newYork["history"];
+    document.querySelector('.history').innerText = newYork["history"];
     document.querySelector('#city-name').innerText = newYork["name"];
-    document.querySelector("#climate").innerText = newYork["climate"];
+    document.querySelector(".climate").innerText = newYork["climate"];
 
     const map = document.createElement('IMG');
     appendElement = document.querySelector('#table-map');

@@ -53,7 +53,7 @@ body {
     text-align: center;
 }
 
-#history {
+.history {
     /* border: 1px orange solid; */
     align-self: center;
     background-color: rgba(0, 0, 0, .4);
@@ -62,7 +62,15 @@ body {
     box-shadow: 0 2px 5px 0 rgba(0,0,0,.9);
 }
 
-#climate {
+.main-text {
+    background-color: rgba(255, 255, 255, .4);
+    color: black;
+    align-self: center;
+    border-radius: 2px 2px;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.9);
+}
+
+.climate {
     background-color: rgba(0, 0, 0, .4);
     color: white;
     border-radius: 2px 2px;
@@ -116,4 +124,8 @@ table td {
 .table-info {
     font-size: .7em;
     border: none;
+}
+
+.map {
+    opacity: .6;
 }
